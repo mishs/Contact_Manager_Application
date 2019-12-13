@@ -3,22 +3,26 @@ import "./App.css";
 import Contact from "./components/Contacts";
 import Header from "./components/Header";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header branding="Contact Manager" />
-        <Contact
-          name="Mish"
-          email="xyz@gmail.com phone"
-          phone="0027 000 0000"
-        />
+        <div className="container">
+          <Contact
+            name="Mish"
+            email="xyz@gmail.com phone"
+            phone="0027 000 0000"
+          />
 
-        <Contact
-          name="Chris"
-          email="jacks@gmail.com phone"
-          phone="0027 111 0000"
-        />
+          <Contact
+            name="Chris"
+            email="jacks@gmail.com phone"
+            phone="0027 111 0000"
+          />
+        </div>
       </div>
     );
   }
